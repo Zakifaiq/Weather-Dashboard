@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+        
+        <div class="location-input">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button id="getWeatherBtn">Get Weather</button>
+        </div>
+
+        <!-- Current Weather Information -->
+        <div id="weather-info">
+            <div id="current-weather" class="card">
+                <h2 id="location"></h2>
+                <img id="weather-icon" src="" alt="Weather Icon">
+                <h3 id="temperature"></h3>
+                <p id="description"></p>
+                <div class="weather-details">
+                    <span>Humidity: <span id="humidity"></span>%</span>
+                    <span>Wind: <span id="wind"></span> km/h</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weather Forecast -->
+        <div id="forecast">
+            <h2>5-Day Forecast</h2>
+            <div id="forecast-cards" class="forecast-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
